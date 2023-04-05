@@ -1,0 +1,254 @@
+@import './vars';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h3,
+h5 {
+    color: $color;
+}
+
+header {
+    background-color: $bg_1;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    background-color: $bg_2;
+    display: grid;
+    grid-template-columns: 25% 50%;
+    grid-template-rows: 100px;
+    justify-content: space-around;
+
+    .left {
+        @extend %center;
+        grid-template-columns: 1fr 0.01fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .right {
+        @extend %center;
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+}
+
+.link {
+    color: $color;
+    font-family: $font;
+    font-size: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.background {
+    background-image: url(/assets/images/fon.jpg);
+    height: 622px;
+    @extend %center;
+    color: $color;
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+main {
+    background-color: $bg_2;
+
+
+    .block_1 {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        position: relative;
+        height: 400px;
+
+        .first {
+            background-color: $bg_3;
+            color: $color;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 45%;
+            grid-row: 5px 10px 7px 10px;
+            justify-content: end;
+            align-items: center;
+            padding-top: 45px;
+            padding-bottom: 45px;
+
+            button {
+                background-color: $bg_1;
+                width: 170px;
+                border-radius: 3px;
+                border-color: $bg_1;
+            }
+        }
+
+        .second {
+            height: 80%;
+
+            .car {
+                height: 180px;
+                width: 400px;
+                position: absolute;
+                margin-top: 50px;
+                padding-left: 150px;
+            }
+        }
+
+        .third {
+            background-color: $bg_3;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 30%;
+            grid-template-rows: 50% 50%;
+            align-items: center;
+
+            .arrow {
+                height: 25px;
+                width: 150px;
+                padding-left: 50px;
+            }
+        }
+    }
+
+    .block_2 {
+        padding-left: 340px;
+    }
+
+    .block_3 {
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+        grid-template-rows: 40% 40%;
+        justify-content: center;
+        padding-top: 80px;
+        height: 400px;
+
+        .box {
+            @extend %box;
+            grid-template-columns: 70%;
+            grid-template-rows: 60% 40%;
+            align-items: center;
+            position: relative;
+
+            .ellipse {
+                padding-left: 17px;
+                padding-top: 10px;
+            }
+
+            .plane_2 {
+                position: absolute;
+                padding-left: 70px;
+                padding-bottom: 40px;
+
+            }
+        }
+
+        .box_1 {
+            @extend %box;
+            grid-template-columns: 70%;
+            grid-template-rows: 60% 40%;
+            align-items: center;
+
+            .plane {
+                @extend %plane;
+            }
+        }
+    }
+
+    .block_4 {
+        display: grid;
+        grid-template-columns: 30% 20% 30%;
+        justify-content: center;
+        position: relative;
+        height: 400px;
+
+        .information {
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 200px;
+            color: $color;
+            padding: 10px;
+        }
+
+        .block_4_2 {
+            background-color: $bg_3;
+            height: 300px;
+            width: 400px;
+            margin-left: 400px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 130px 130px;
+            position: absolute;
+            margin-left: 800px;
+            margin-top: 30px;
+
+            .square {
+                @extend %square;
+                display: grid;
+                grid-template-columns: 70%;
+                grid-template-rows: 25px 15px 15px;
+                justify-content: center;
+
+                span {
+                    font-size: 40px;
+                    font-weight: 800;
+                }
+            }
+
+            .square_1 {
+                @extend %square;
+                background-image: url(/assets/images/truck.jpg);
+            }
+
+            .truck {
+                height: 130px;
+                width: 130px;
+            }
+        }
+    }
+}
+
+.Rectangle {
+    height: 3px;
+}
+
+.maps {
+    height: 400px;
+    background-image: url(/assets/images/maps.jpg);
+}
+
+footer {
+    background-color: $bg_1;
+    @extend %center;
+    grid-template-columns: 15% 25% 10% 35%;
+    grid-template-rows: 100px;
+    color: $color;
+
+    .color_grey {
+        color: $bg_2;
+    }
+
+    .developed {
+        display: grid;
+        grid-template-columns: 190px;
+        grid-template-rows: 50px;
+        justify-content: center;
+        align-items: end;
+        font-size: 13px;
+    }
+}

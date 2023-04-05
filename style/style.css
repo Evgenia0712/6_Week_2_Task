@@ -1,0 +1,239 @@
+footer, .background, nav .right, nav .left {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+main .block_3 .box_1 .plane {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+main .block_3 .box_1, main .block_3 .box {
+  border: 2px solid #2F343A;
+  background-color: #393F47;
+  display: grid;
+  justify-content: center;
+}
+
+main .block_4 .info .square_1, main .block_4 .info .square {
+  border: 1px solid #C8A35F;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 130px;
+  width: 130px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h3,
+h5 {
+  color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: #C8A35F;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  background-color: #2F343A;
+  display: grid;
+  grid-template-columns: 25% 50%;
+  grid-template-rows: 100px;
+  justify-content: space-around;
+}
+nav .left {
+  grid-template-columns: 1fr 0.01fr 1fr;
+  grid-gap: 20px;
+}
+nav .right {
+  grid-template-columns: 20% 20% 20% 20%;
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.background {
+  background-image: url(/assets/images/fon.jpg);
+  height: 622px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.background h1 {
+  font-size: 50px;
+}
+
+main {
+  background-color: #2F343A;
+}
+main .block_1 {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  position: relative;
+  height: 400px;
+}
+main .block_1 .first {
+  background-color: #393F47;
+  color: rgb(255, 255, 255);
+  height: 80%;
+  display: grid;
+  grid-template-columns: 45%;
+  grid-row: 5px 10px 7px 10px;
+  justify-content: end;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+main .block_1 .first button {
+  background-color: #C8A35F;
+  width: 170px;
+  border-radius: 3px;
+  border-color: #C8A35F;
+}
+main .block_1 .second {
+  height: 80%;
+}
+main .block_1 .second .car {
+  height: 180px;
+  width: 400px;
+  position: absolute;
+  margin-top: 50px;
+  padding-left: 150px;
+}
+main .block_1 .third {
+  background-color: #393F47;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 30%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+}
+main .block_1 .third .arrow {
+  height: 25px;
+  width: 150px;
+  padding-left: 50px;
+}
+main .block_2 {
+  padding-left: 340px;
+}
+main .block_3 {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 40% 40%;
+  justify-content: center;
+  padding-top: 80px;
+  height: 400px;
+}
+main .block_3 .box {
+  grid-template-columns: 70%;
+  grid-template-rows: 60% 40%;
+  align-items: center;
+  position: relative;
+}
+main .block_3 .box .ellipse {
+  padding-left: 17px;
+  padding-top: 10px;
+}
+main .block_3 .box .plane_2 {
+  position: absolute;
+  padding-left: 70px;
+  padding-bottom: 40px;
+}
+main .block_3 .box_1 {
+  grid-template-columns: 70%;
+  grid-template-rows: 60% 40%;
+  align-items: center;
+}
+main .block_4 {
+  display: grid;
+  grid-template-columns: 30% 20% 30%;
+  justify-content: center;
+  position: relative;
+  height: 400px;
+}
+main .block_4 .information {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 200px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+main .block_4 .block_4_2 {
+  background-color: #393F47;
+  height: 300px;
+  width: 400px;
+  margin-left: 400px;
+}
+main .block_4 .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 130px 130px;
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 30px;
+}
+main .block_4 .info .square {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 25px 15px 15px;
+  justify-content: center;
+}
+main .block_4 .info .square span {
+  font-size: 40px;
+  font-weight: 800;
+}
+main .block_4 .info .square_1 {
+  background-image: url(/assets/images/truck.jpg);
+}
+main .block_4 .info .truck {
+  height: 130px;
+  width: 130px;
+}
+
+.Rectangle {
+  height: 3px;
+}
+
+.maps {
+  height: 400px;
+  background-image: url(/assets/images/maps.jpg);
+}
+
+footer {
+  background-color: #C8A35F;
+  grid-template-columns: 15% 25% 10% 35%;
+  grid-template-rows: 100px;
+  color: rgb(255, 255, 255);
+}
+footer .color_grey {
+  color: #2F343A;
+}
+footer .developed {
+  display: grid;
+  grid-template-columns: 190px;
+  grid-template-rows: 50px;
+  justify-content: center;
+  align-items: end;
+  font-size: 13px;
+}/*# sourceMappingURL=style.css.map */
