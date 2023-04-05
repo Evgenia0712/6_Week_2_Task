@@ -58,6 +58,11 @@ nav {
     color: $color;
     text-align: center;
 
+    .heading {
+        border: 1px solid $bg_1;
+        width: 800px;
+    }
+
     h1 {
         font-size: 50px;
     }
@@ -139,6 +144,7 @@ main {
             grid-template-rows: 60% 40%;
             align-items: center;
             position: relative;
+            background-color: $bg_1;
 
             .ellipse {
                 padding-left: 17px;

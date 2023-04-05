@@ -78,6 +78,10 @@ nav .right {
   color: rgb(255, 255, 255);
   text-align: center;
 }
+.background .heading {
+  border: 1px solid #C8A35F;
+  width: 800px;
+}
 .background h1 {
   font-size: 50px;
 }
@@ -148,6 +152,7 @@ main .block_3 .box {
   grid-template-rows: 60% 40%;
   align-items: center;
   position: relative;
+  background-color: #C8A35F;
 }
 main .block_3 .box .ellipse {
   padding-left: 17px;
