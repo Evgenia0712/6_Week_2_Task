@@ -101,7 +101,6 @@ main .block_1 .first {
   height: 80%;
   display: grid;
   grid-template-columns: 45%;
-  grid-row: 5px 10px 7px 10px;
   justify-content: end;
   align-items: center;
   padding-top: 45px;
@@ -117,7 +116,7 @@ main .block_1 .second {
   height: 80%;
 }
 main .block_1 .second .car {
-  height: 180px;
+  height: 170px;
   width: 400px;
   position: absolute;
   margin-top: 50px;
